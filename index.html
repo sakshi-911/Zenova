@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>Solar System Explorer</h1>
+        <div id="searchBarContainer">
+            <input type="text" id="searchBar" placeholder="Search for a planet, moon, or star...">
+        </div>
+    </header>
+    <section id="filters">
+        <h3>Filters</h3>
+        <div>
+            <label for="typeFilter">Body Type:</label>
+            <select name="" id="typeFilter">
+                <option value="all">All</option>
+                <option value="Planet">Planet</option>
+                <option value="Moon">Moon</option>
+                <option value="Comet">Comet</option>
+                <option value="Asteroid">Asteroid</option>
+                
+            </select>
+
+        </div>
+        <button id="applyFilters">Apply Filters</button>
+        <button id="resetFilters">Reset Filters</button>
+    </section>
+    <section id="popular">
+        <h2>Popular Celestial Bodies</h2>
+        <div class="card-container" id="popularCards"></div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Solar System Explorer</p>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div class="modal" id="detailModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+<script src="script.js"></script>
+    
+    
+</body>
+</html>
